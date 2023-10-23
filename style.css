@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Open+Sans:wght@300&display=swap');
+html{
+    background-image: url(willian-justen-de-vasconcellos-F_dsnuXt6T0-unsplash.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0;
+}
+.wrapper{
+    margin: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(29, 14, 22, 0.44)
+}  
+.menuItem{
+    padding-right: 50px;
+}
+.menuItem a{
+    color: white;
+    text-decoration: none;
+}
+.flex1{
+    padding-left: 50px;
+    color: white;
+}
+.flex2{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+}
+main{
+    display: flex;
+}
+.mainLeft{
+    text-align: center;
+    margin: 25px;
+    display: inline-block;
+    flex: 1;
+    color: white;
+}
+.mainLeft h1,span{
+    font-size: xx-large;
+    font-weight: 600;
+}
+span{
+    font-weight: 900;
+    color: blue;
+}
+.mainRight{
+    flex: 1;
+}
+.name{
+    display: flex;
+    align-items: center;
+}
