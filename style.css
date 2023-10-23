@@ -1,34 +1,41 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Open+Sans:wght@300&display=swap');
-html{
-    background-image: url(willian-justen-de-vasconcellos-F_dsnuXt6T0-unsplash.jpg);
+body{
+    background-image: url(jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
     background-size: cover;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
 }
-
-body{
-    box-sizing: border-box;
-    margin:0px;
-    padding: 0;
-}
-.wrapper{
-    margin: 0;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(29, 14, 22, 0.44)
-}  
-.menuItem{
-    padding-right: 50px;
-}
-.menuItem a{
+header aside h1{
+    font-size: xx-large;
     color: white;
-    text-decoration: none;
 }
+header{
+    background-color: rgba(51, 52, 53, 0.247);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+nav{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+nav a:hover{
+    color: #df8d22;
+}
+
+
+
+
+
 .flex1{
     padding-left: 50px;
     color: white;
@@ -57,10 +64,78 @@ span{
     font-weight: 900;
     color: blue;
 }
+.mainLeft{
+    text-align: center;
+}
 .mainRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
     flex: 1;
 }
 .name{
     display: flex;
     align-items: center;
+}
+
+.sun{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background:rgb(255, 162, 0);
+    box-shadow: 0 0 30px #df8d22;
+    border-radius: 50%;
+}
+
+.axis1{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-right: 2px solid white;
+    border-radius: 50%;
+    animation: anime-1 5s linear infinite;
+}
+
+@keyframes anime-1 {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.axis1 .earth{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: steelblue;
+    border-radius: 50%;
+    left: 180px;
+    top: 370px;
+}
+.earth{
+    box-shadow: 0 0 30px rgb(83, 83, 231);
+}
+
+.axis2{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-right: 2px solid #fff;
+    border-radius: 50%;
+    top: 350px;
+    left: 160px;
+    animation: anime-1 3s linear infinite;
+}
+
+.axis2 .moon{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: grey;
+    top: 85px;
+    left: 50px;
+}
+
+.moon{
+    box-shadow: 0 0 15px rgb(255, 255, 255);
 }
