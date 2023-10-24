@@ -1,7 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Open+Sans:wght@300&display=swap');
+*{
+    cursor:url(img/rocket\ \(1\).png),auto;
+}
 body{
-    background-image: url(jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
+    background-image: url(img/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
     background-size: cover;
     box-sizing: border-box;
     margin: 0;
@@ -29,6 +32,7 @@ nav{
     justify-content: space-between;
 }
 nav a:hover{
+    text-shadow: 0 0 30px #df8d22;
     color: #df8d22;
 }
 
@@ -49,23 +53,38 @@ nav a:hover{
 main{
     display: flex;
 }
-.mainLeft{
-    text-align: center;
-    margin: 25px;
-    display: inline-block;
-    flex: 1;
-    color: white;
-}
 .mainLeft h1,span{
-    font-size: xx-large;
+    font-size: 60px;
     font-weight: 600;
 }
-span{
-    font-weight: 900;
-    color: blue;
+.name span{
+    color: white;
+    font-size: 50px;
+}
+.name span:hover{
+    text-shadow: 0 0 30px #df8d22;
+    color: #df8d22;
+    font-size: 65px;
+}
+
+.name2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name2 span{    
+    color: #df8d22;
+    text-shadow: 0 0 30px #df8d22;
+    margin-right:30px;
 }
 .mainLeft{
-    text-align: center;
+    flex: 1;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
 }
 .mainRight{
     display: flex;
@@ -81,8 +100,8 @@ span{
 
 .sun{
     position: absolute;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background:rgb(255, 162, 0);
     box-shadow: 0 0 30px #df8d22;
     border-radius: 50%;
@@ -90,14 +109,14 @@ span{
 
 .axis1{
     position: absolute;
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     border-right: 2px solid white;
     border-radius: 50%;
-    animation: anime-1 5s linear infinite;
+    animation: rotation-1 4s linear infinite;
 }
 
-@keyframes anime-1 {
+@keyframes rotation-1 {
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
 }
@@ -109,7 +128,7 @@ span{
     background: steelblue;
     border-radius: 50%;
     left: 180px;
-    top: 370px;
+    top: 555px;
 }
 .earth{
     box-shadow: 0 0 30px rgb(83, 83, 231);
@@ -121,9 +140,9 @@ span{
     width: 100px;
     border-right: 2px solid #fff;
     border-radius: 50%;
-    top: 350px;
+    top: 535px;
     left: 160px;
-    animation: anime-1 3s linear infinite;
+    animation: rotation-1 2s linear infinite;
 }
 
 .axis2 .moon{
@@ -138,4 +157,21 @@ span{
 
 .moon{
     box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+
+/* Github Button */
+
+.github{
+    font-size: x-large;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 60px;
+    border-radius: 25px;
+    border: 1px solid #df8d22;
+}
+.github:hover{
+    box-shadow:0 0 30px #df8d22;
 }
