@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Open+Sans:wght@300&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Open+Sans:wght@300&display=swap');
 *{
     cursor:url(img/rocket\ \(1\).png),auto;
 }
@@ -17,6 +16,7 @@ header aside h1{
 }
 header{
     background-color: rgba(51, 52, 53, 0.247);
+    height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -75,9 +75,12 @@ main{
 .name2 span{    
     color: #df8d22;
     text-shadow: 0 0 30px #df8d22;
+    font-size: 60px;
+    font-weight: 600;
     margin-right:30px;
 }
 .mainLeft{
+    margin-top: 20px;
     flex: 1;
     color: white;
     display:flex;
@@ -87,6 +90,7 @@ main{
     height: 70vh;
 }
 .mainRight{
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,6 +101,8 @@ main{
     display: flex;
     align-items: center;
 }
+
+/* Solar system */
 
 .sun{
     position: absolute;
@@ -165,7 +171,7 @@ main{
 .github{
     font-size: x-large;
     font-weight: 600;
-    background-color: black;
+    background-color: rgba(51, 52, 53, 0.247);
     color: white;
     width: 300px;
     height: 60px;
@@ -174,4 +180,56 @@ main{
 }
 .github:hover{
     box-shadow:0 0 30px #df8d22;
+}
+
+
+
+/* About Page */
+
+.wrappera{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 230px;
+    height: 350px;
+    width: 350px;
+    border: solid 1px #df8d22;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #df8d22;
+    overflow: hidden;
+    background-color: none;}
+.headshot img{
+    overflow: hidden;
+    
+}
+article{
+    
+    border-radius: 25px;
+    margin-top: 10px;
+    background-color: rgba(51, 52, 53, 0.247);
+    color: white;
+    text-align: center;
+    max-width: 60%;
+}
+article h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+article p, span{
+    font-size: x-large;
+    font-weight: 400;
+}
+article span{
+    color: #df8d22;
+    text-shadow:0 0 30px #df8d22;
 }
