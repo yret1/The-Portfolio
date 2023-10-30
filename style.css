@@ -1,7 +1,13 @@
    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Open+Sans:wght@300&display=swap');
-*{
-    cursor:url(img/rocket\ \(1\).png),auto;
+
+.cursor{
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    z-index: 1000;
+    background-image: url(/img/image.png);
 }
+
 body{
     background-image: url(img/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
     background-size: cover;
@@ -10,10 +16,12 @@ body{
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
 }
+
 header aside h1{
     font-size: xx-large;
     color: white;
 }
+
 header{
     background-color: rgba(51, 52, 53, 0.247);
     height: 80px;
@@ -21,6 +29,7 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+
 nav a{
     text-decoration: none;
     color: white;
@@ -44,6 +53,7 @@ nav a:hover{
     padding-left: 50px;
     color: white;
 }
+
 .flex2{
     display: flex;
     width: 30%;
