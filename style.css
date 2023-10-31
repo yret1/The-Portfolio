@@ -9,6 +9,7 @@
 }
 
 body{
+    cursor: none;
     background-image: url(img/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
     background-size: cover;
     box-sizing: border-box;
