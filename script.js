@@ -11,10 +11,17 @@ let prevY = 0;
 
 
 function updatePos(ev){
+
+
+    let dx = x - prevX;
+    let dy = y - prevY;
+    let distance = Math.sqrt(dx * dx + dy * dy);  
     
+    if(distance > 20){
     
-      prevX = x;
-      prevY = y;
+        prevX = x;
+        prevY = y;
+    }
 
     x = ev.clientX
     y = ev.clientY

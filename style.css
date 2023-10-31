@@ -32,6 +32,7 @@ header{
 }
 
 nav a{
+    cursor: none;
     text-decoration: none;
     color: white;
     font-size: larger;
@@ -180,6 +181,7 @@ main{
 /* Github Button */
 
 .github{
+    cursor: none;
     font-size: x-large;
     font-weight: 600;
     background-color: rgba(51, 52, 53, 0.247);
