@@ -38,3 +38,28 @@ function updatePos(ev){
     cursor[0].style.top = y + 'px';
 }
 
+
+let rocket = document.getElementById("rocket")
+let buttonSub = document.getElementById("submitKnapp")
+
+
+buttonSub.addEventListener("click", rocketLaunch)
+
+
+
+function rocketLaunch(){
+
+    rocket.save()
+
+    rocket.style.translate = "0 -1500px";
+
+
+    setTimeout(() => {
+        document.getElementById('emailForm').submit();
+      }, 3000);
+
+
+
+}
+
+

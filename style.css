@@ -2,6 +2,7 @@
 
 .cursor{
     height: 32px;
+    z-index: 1000;
     width: 32px;
     position: absolute;
     background-image: url(/img/image.png);
@@ -9,6 +10,7 @@
 
 body{
     height: 100svh;
+    overflow: hidden;
     cursor: none;
     background-image: url(img/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
     background-size: cover;
@@ -92,7 +94,7 @@ main{
     align-items: center;
     justify-content: center;
 }
-.name2 span{    
+.name2 span{
     color: #df8d22;
     text-shadow: 0 0 30px #df8d22;
     font-size: 60px;
@@ -231,10 +233,10 @@ main{
     background-color: none;}
 .headshot img{
     overflow: hidden;
-    
+
 }
 article{
-    
+
     border-radius: 25px;
     margin-top: 10px;
     background-color: rgba(51, 52, 53, 0.247);
@@ -259,37 +261,48 @@ article span{
 
 
 
+/* Rocket Contact Form */
 
-.formWrapper{
+
+.rocketWrapper{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
 }
+#rocket{
+    position: absolute;
+    background-image: url(/img/spacecraft-svgrepo-com.svg);
+    top: 100px;
+    width: 1200px;
+    background-repeat: no-repeat;
+    height: 1400px;
+    transition: 3s;
+    transition-timing-function: ease-in;
 
-.formWrapper input{
-    resize: vertical;
-    color: white;
-    overflow: auto;
-    font-size: xx-large;
-    background-color: rgba(255, 255, 255, 0.116);
-    border: 2px solid #df8d22;
-    border-radius: 15px;
-    width: 600px;
-    margin: 20px;
-    height: 100px;
-}
 
-.formWrapper input:focus{
-    border: 2px solid #df8d22;
-    box-shadow: 0 0 30px #df8d22;
-}
-
-#buttonWrapper{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailForm{
+
+    max-width: 300px;
+    bottom: 100px;
+
+
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-#buttonWrapper button{
-    background-image: none;
+form > input, form > button, form > textarea{
+    border-radius: 15px;
+    background-color: #ffffff25;
+
+
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
 }
