@@ -4,11 +4,11 @@
     height: 32px;
     width: 32px;
     position: absolute;
-    z-index: 1000;
     background-image: url(/img/image.png);
 }
 
 body{
+    height: 100svh;
     cursor: none;
     background-image: url(img/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
     background-size: cover;
@@ -18,9 +18,17 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-header aside h1{
+header aside a{
+    text-decoration: none;
     font-size: xx-large;
     color: white;
+}
+header aside a:hover{
+    cursor: none;
+    text-decoration: none;
+    font-size: xx-large;
+    color: #df8d22;
+    text-shadow: 0 0 30px #df8d22;
 }
 
 header{
@@ -245,4 +253,43 @@ article p, span{
 article span{
     color: #df8d22;
     text-shadow:0 0 30px #df8d22;
+}
+
+
+
+
+
+
+.formWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.formWrapper input{
+    resize: vertical;
+    color: white;
+    overflow: auto;
+    font-size: xx-large;
+    background-color: rgba(255, 255, 255, 0.116);
+    border: 2px solid #df8d22;
+    border-radius: 15px;
+    width: 600px;
+    margin: 20px;
+    height: 100px;
+}
+
+.formWrapper input:focus{
+    border: 2px solid #df8d22;
+    box-shadow: 0 0 30px #df8d22;
+}
+
+#buttonWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#buttonWrapper button{
+    background-image: none;
 }
