@@ -1,7 +1,8 @@
 
+// Custom
+let bodyElement = document.querySelector('body');
 
-let bodyElement = document.querySelector('body')
-bodyElement.addEventListener('mousemove', updatePos)
+bodyElement.addEventListener('mousemove', updatePos);
 
 let x = 0;
 let y = 0;
@@ -11,7 +12,6 @@ let prevY = 0;
 
 
 function updatePos(ev){
-
 
     let dx = x - prevX;
     let dy = y - prevY;
@@ -38,28 +38,13 @@ function updatePos(ev){
     cursor[0].style.top = y + 'px';
 }
 
-
+// Rocket assets
 let rocket = document.getElementById("rocket")
-let buttonSub = document.getElementById("submitKnapp")
 
-
-buttonSub.addEventListener("click", rocketLaunch)
-
-
-
+// Landing or Launching rocket
 function rocketLaunch(){
 
-    rocket.save()
-
-    rocket.style.translate = "0 -1500px";
-
-
-    setTimeout(() => {
-        document.getElementById('emailForm').submit();
-      }, 3000);
-
-
-
+    rocket.style.translate = "0 1500px";
 }
 
 
