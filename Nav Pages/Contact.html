@@ -8,12 +8,12 @@
     <script src="/script.js" defer></script>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body onload="rocketLaunch()">
+<body>
 
     <div class="cursor"></div>
 
     <header>
-        <aside><h1><a href="/index.html">The Galactic Portfolio</a></h1></aside>
+        <aside><h1><a href="/index.html">The Universe</a></h1></aside>
         <nav>
             <a class="listItem" href="/Nav Pages/About.html">About Me</a>
             <a class="listItem" href="/Nav Pages/Projects.html">Projects</a>
@@ -21,18 +21,25 @@
         </nav>
     </header>
 
-<section class="rocketWrapper">
+    <main>
+        <section class="formWrapper">
+            <section class="rocket">
+                <form id="form" action="https://api.web3forms.com/submit" method="POST">
 
-    <section id="rocket"></section>
+                    <input type="hidden" name="access_key" value="7c4423bc-0b9f-40a5-8f54-b273ff3e23bd">
+                
+                    <input class="inputBox" type="text" name="name" placeholder="Enter Name..." required>
+                    <input class="inputBox" type="email" name="email" placeholder="Enter Email..." required>
+                    <textarea class="inputBox" name="message" placeholder="Enter Message..." rows="7" required></textarea>
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <button class="theKnappen" type="submit">Launch Message</button>
+                
+                </form>
+                
+                <script src="https://web3forms.com/client/script.js" async defer></script>
+            </section>
+        </section>
+    </main>
 
-    <article>
-        <h1>My Emailaddress:</h1>
-        <p>simgus1234@gmail.com</p>
-    </article>
-
-    
-
-</section>
-    
 </body>
 </html>

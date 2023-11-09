@@ -38,13 +38,19 @@ function updatePos(ev){
     cursor[0].style.top = y + 'px';
 }
 
+
+
+
+
+
+
+
 // Rocket assets
-let rocket = document.getElementById("rocket")
+let rocket = document.getElementsByClassName("rocket")
+form.addEventListener('submit',setTimeout(rocketLaunch(), 200))
 
 // Landing or Launching rocket
 function rocketLaunch(){
 
     rocket.style.translate = "0 1500px";
 }
-
-
