@@ -144,10 +144,10 @@ main{
     width: 600px;
     border-right: 2px solid white;
     border-radius: 50%;
-    animation: rotation-1 4s linear infinite;
+    animation: rotation-x 4s linear infinite;
 }
 
-@keyframes rotation-1 {
+@keyframes rotation-x {
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
 }
@@ -173,7 +173,7 @@ main{
     border-radius: 50%;
     top: 535px;
     left: 160px;
-    animation: rotation-1 2s linear infinite;
+    animation: rotation-x 2s linear infinite;
 }
 
 .axis2 .moon{
