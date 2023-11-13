@@ -194,15 +194,21 @@ main{
 /* Github Button */
 
 .github{
+    background-image: url(/img/Github_Logo.svg);
+    background-position: center;
+    background-size:70% ;
+    background-repeat: no-repeat;
+    background-color: black;
+
     cursor: none;
     font-size: x-large;
     font-weight: 600;
-    background-color: rgba(51, 52, 53, 0.247);
     color: white;
     width: 300px;
     height: 60px;
     border-radius: 25px;
     border: 1px solid #df8d22;
+    transition: 1s;
 }
 .github:hover{
     box-shadow:0 0 30px #df8d22;
