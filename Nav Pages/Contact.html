@@ -27,9 +27,8 @@
                 <form id="form" action="https://api.web3forms.com/submit" method="POST">
 
                     <input type="hidden" name="access_key" value="7c4423bc-0b9f-40a5-8f54-b273ff3e23bd">
-                
-                    <input class="inputBox" type="text" name="name" placeholder="Enter Name..." required>
-                    <input class="inputBox" type="email" name="email" placeholder="Enter Email..." required>
+                    <input class="inputBox" id="name" type="text" name="name" placeholder="Enter Name..." required>
+                    <input class="inputBox" id="email" type="email" name="email" placeholder="Enter Email..." required>
                     <textarea class="inputBox" name="message" placeholder="Enter Message..." rows="7" required></textarea>
                     <div class="h-captcha" data-captcha="true"></div>
                     <button class="theKnappen" type="submit">Launch Message</button>

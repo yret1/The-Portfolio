@@ -196,7 +196,7 @@ main{
 .github{
     background-image: url(/img/Github_Logo.svg);
     background-position: center;
-    background-size:70% ;
+    background-size:60% ;
     background-repeat: no-repeat;
     background-color: black;
 
@@ -381,6 +381,7 @@ main{
     background-color: #ffffff1e;
     border-radius: 15px;
     display: none;
+    padding-bottom: 10px;
     transition: 300ms;
 }
 
@@ -394,7 +395,21 @@ main{
 }
 
 #parallaxCard div{
-    background-image: url(/img/070e6cec330e6a87c8b9146942908d5b.png);
+    background-image: url(/img/ratingPage.png);
     background-position: center;
     background-size: cover;
+}
+
+
+.projectCard__link{
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+    &:hover{
+        color: #df8d22;
+        text-shadow: 0 0 30px #df8d22;
+    }
 }
